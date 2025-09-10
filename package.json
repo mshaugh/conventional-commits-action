@@ -1,5 +1,6 @@
 {
   "name": "@mshaugh/conventional-commits-action",
+  "version": "1.0.0",
   "private": true,
   "keywords": [
     "github-actions",

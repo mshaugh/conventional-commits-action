@@ -1,0 +1,41 @@
+name: Conventional Commits Action
+description: Conventional Commits
+author: Max Shaughnessy <mshaugh@hey.com>
+
+branding:
+  icon: circle
+  color: red
+
+inputs:
+  token:
+    description: GitHub Token
+    required: true
+  targets:
+    description: Space separated targets
+    required: true
+  types:
+    description: Types
+    default: >
+      feat
+      fix
+      docs
+      style
+      refactor
+      perf
+      test
+      build
+      ci
+      chore
+      revert
+  scopes:
+    description: Scopes
+  allowMergeCommits:
+    description: Allow merge commits
+    default: 'false'
+  allowRevertCommits:
+    description: Allow revert commits
+    default: 'false'
+
+runs:
+  using: node24
+  main: dist/index.js

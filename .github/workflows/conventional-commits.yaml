@@ -1,0 +1,20 @@
+name: Conventional Commits
+
+on:
+  pull_request:
+    types: [ edited, opened, reopened, synchronize ]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  conventional-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conventional Commits
+        uses: ./
+        with:
+          token: ${{ github.token }}
+          targets: >
+            title
+            commits
