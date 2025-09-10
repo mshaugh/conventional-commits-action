@@ -1,0 +1,39 @@
+{
+  "name": "@mshaugh/conventional-commits-action",
+  "private": true,
+  "keywords": [
+    "github-actions",
+    "conventional-commits"
+  ],
+  "homepage": "https://github.com/mshaugh/conventional-commits-action",
+  "bugs": {
+    "url": "https://github.com/mshaugh/conventional-commits-action/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshaugh/conventional-commits-action.git"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "author": "Max Shaughnessy <mshaugh@hey.com>",
+  "type": "module",
+  "scripts": {
+    "build": "rolldown --config rolldown.config.ts",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "local": "local-action . ./src/main.ts .env",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@actions/core": "1.11.1",
+    "@actions/github": "6.0.1",
+    "@conventional-commits/parser": "0.4.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@github/local-action": "5.2.0",
+    "@types/node": "24.3.1",
+    "rolldown": "latest",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.15.1"
+}

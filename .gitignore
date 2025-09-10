@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# typescript
+*.tsbuildinfo
+
+# cache
+.cache/
+
+# dotenv
+.env*
+!.env.example
