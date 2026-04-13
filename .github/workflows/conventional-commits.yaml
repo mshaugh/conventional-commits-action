@@ -2,7 +2,7 @@ name: Conventional Commits
 
 on:
   pull_request:
-    types: [ edited, opened, reopened, synchronize ]
+    types: [edited, opened, reopened, synchronize]
 
 permissions:
   pull-requests: read
@@ -11,6 +11,7 @@ jobs:
   conventional-commits:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v6
       - name: Conventional Commits
         uses: ./
         with:
