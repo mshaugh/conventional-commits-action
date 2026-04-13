@@ -34,7 +34,7 @@
     "@github/local-action": "5.2.0",
     "@types/node": "24.12.2",
     "rolldown": "1.0.0-rc.15",
-    "typescript": "5.9.2"
+    "typescript": "6.0.2"
   },
   "packageManager": "pnpm@10.15.1"
 }
