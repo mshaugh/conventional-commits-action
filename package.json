@@ -32,7 +32,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.11",
     "@github/local-action": "5.2.0",
-    "@types/node": "24.3.1",
+    "@types/node": "24.12.2",
     "rolldown": "1.0.0-rc.15",
     "typescript": "5.9.2"
   },
