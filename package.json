@@ -36,5 +36,5 @@
     "rolldown": "1.0.0-rc.15",
     "typescript": "6.0.2"
   },
-  "packageManager": "pnpm@10.15.1"
+  "packageManager": "pnpm@10.33.0"
 }
